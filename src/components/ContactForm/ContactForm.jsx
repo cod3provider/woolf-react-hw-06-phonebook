@@ -6,7 +6,7 @@ import { getContacts } from '../../store/selectors';
 import { createContact } from '../../store/contactsSlice';
 import s from './ContactForm.module.css';
 
-const ContactForm = ({ onSubmit }) => {
+const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', number: '' });
 
   const contacts = useSelector(getContacts);
