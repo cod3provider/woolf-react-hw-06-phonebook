@@ -22,9 +22,7 @@ const ContactForm = ({ onSubmit }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
     const { name, number } = formData;
-
     const isExist = contacts.some(contact => contact.name.toLowerCase() === name.toLowerCase());
 
     isExist
